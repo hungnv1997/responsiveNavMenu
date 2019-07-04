@@ -5,9 +5,6 @@ body
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
 }
-a:hover, label:hover{
-    color: #9b59b6;
-}
 header{
     border-bottom: 1px solid black;
     line-height: 70px;
@@ -16,8 +13,8 @@ header{
     display: inline;
     font-size: 2rem;
     padding-left: 2rem;
-    text-decoration: none;
-    font-weight: bold;
+        text-decoration: none;
+        font-weight: bold;
 }
 /*For mobile*/
 nav {
@@ -29,10 +26,11 @@ nav a{
     display: block;
     text-align: center;
     border-bottom: 1px solid black;
-    margin-top: 0;
-    margin-right: 2rem;
-    text-decoration: none;
+    padding-right: 2.5rem;
+        text-decoration: none;
+        font-weight: bold;
 }
+
 #toggle{
    display: none;
 }
@@ -40,15 +38,16 @@ label{
     cursor: pointer;
     position: absolute;
     right:0;
-    padding-right: 1rem;
-    padding-top: 0.6rem;
+    padding-right: 1.5rem;
+    padding-top: 0.3rem;
+    font-size: 1rem;
 }
 #toggle:checked + .menu {
     display: block;
-
+    transition: 1.7s;
 }
 /*For Destop*/
-@media screen and (min-width: 700px){
+@media screen and (min-width: 800px){
     label{
         display: none;
     }
@@ -57,14 +56,21 @@ label{
     }
     .logo{
         flex-grow: 1;
-        
+        padding-left: 2rem;
+        text-decoration: none;
+        font-weight: bold;
     }
-    .menu {flex-basis: 500px;}
+    .menu {
+        display: inline;
+        flex-basis: 500px;}
     .menu a{
         display: inline;
-        
-        border:0;
+        text-decoration: none;
+        font-weight: bold;
+        border: 0;
     }
-    
+    a:hover{
+        color: #9b59b6;
+    }
 
 }
